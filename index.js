@@ -31,7 +31,6 @@ if (program.list) {
       var output = 'Sorry, there was an error, check the logs';
       response.write(output);
     });
-});
 }
 
 if (program.healthy) {
@@ -43,7 +42,7 @@ if (program.healthy) {
       output = 'No ' + items, constant.STATUS_HEALTHY + ' snitches found.';
     }
     response.write(output); //output to user
-  });
+  })
     .catch(function(error) { //catch errors
       //output generic message
       var output = 'Sorry, there was an error, check the logs';
@@ -61,7 +60,7 @@ if (program.unhealthy) {
       output = 'No ' + items, constant.STATUS_UNHEALTHY + ' snitches found.';
     }
     response.write(output); //output to user
-  });
+  })
     .catch(function(error) { //catch errors
       //output generic message
       var output = 'Sorry, there was an error, check the logs';
