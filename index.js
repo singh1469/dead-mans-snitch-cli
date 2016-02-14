@@ -1,5 +1,7 @@
 'use strict'
 
+//main file, entry point
+
 //make user of let syntax
 //implement way of allowing user to specify key
 
