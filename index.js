@@ -2,9 +2,6 @@
 
 //main file, entry point
 
-//make user of let syntax
-//implement way of allowing user to specify key
-
 var program = require('commander');
 var snitch = require('./lib/snitch.js');
 var constant = require('./lib/constant.js');
