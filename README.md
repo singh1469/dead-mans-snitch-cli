@@ -3,3 +3,4 @@
 #####make user of let syntax
 #####comments
 #####check code
+#####output errors to var/log
