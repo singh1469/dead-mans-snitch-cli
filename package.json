@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Command-line utility for dead-mans-snitch",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "singh1469@gmail.com",
   "license": "ISC",
   "dependencies": {
