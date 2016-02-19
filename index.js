@@ -20,7 +20,7 @@ program
   .parse(process.argv);
 
 if (api_key === '') {
-  var message = chalk.red.bold('Sorry, no api key found. Try setting DEAD_MANS_SNITCH_KEY as an environment variable containing your api key');
+  let message = chalk.red.bold('Sorry, no api key found. Try setting DEAD_MANS_SNITCH_KEY as an environment variable containing your api key');
   response.write(message);
   return;
 }
@@ -49,7 +49,7 @@ if (program.healthy) {
     //specify type of snitches to include - healthy
     var output = response.generate(items, constant.STATUS_HEALTHY);
     if (output === false) {
-      output = 'No ' + items, constant.STATUS_HEALTHY + ' snitches found.';
+      output = `No ${constant.STATUS_HEALTHY} snitches found.`;
     }
     response.write(output); //output to user
   })
@@ -68,7 +68,7 @@ if (program.unhealthy) {
     var output = response.generate(items, constant.STATUS_UNHEALTHY);
     //generate client response
     if (output === false) {
-      output = 'No ' + items, constant.STATUS_UNHEALTHY + ' snitches found.';
+      output = `No ${constant.STATUS_UNHEALTHY} snitches found.`;
     }
     response.write(output); //output to user
   })
