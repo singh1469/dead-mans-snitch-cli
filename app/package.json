@@ -6,8 +6,8 @@
   "author": "singh1469@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^1.1.1",
-    "commander": "^2.9.0",
+    "chalk": "1.1.1",
+    "commander": "2.9.0",
     "dead-mans-snitch": "0.0.2"
   }
 }
