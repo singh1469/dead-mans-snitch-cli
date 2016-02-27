@@ -20,10 +20,20 @@ Purpose of this project was two fold;
 
 #####Only tested on OSX
 
+##Docker support
+This utility can also run as a Docker container
+```
+cd /path/to/dead-mans-snitch-cli
+docker build .
+#grab the docker image id
+#grab your api key
+docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  <DOCKER_IMAGE_ID> ./run.sh --list
+```
+
 ##Example usage
 `node --harmony index.js --list`
 
 ##Todo
 #####comments
-#####check code
 #####output errors to var/log
+#####tests
