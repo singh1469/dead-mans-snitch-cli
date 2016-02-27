@@ -1,5 +1,3 @@
-##This is work in progress - pet project to get familiar with es6 harmony
-
 ##About
 `CLI` utility to check your [snitches]().
 
