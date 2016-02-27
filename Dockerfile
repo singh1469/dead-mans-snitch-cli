@@ -1,15 +1,13 @@
 FROM node:argon
 
-#Environment variables
-ENV DEAD_MANS_SNITCH_KEY ${DEAD_MANS_SNITCH_KEY}
-
-#Mount the directory todo
+#Mount the application directory
 ADD ./app /app
 
-#Directory from which to run command
+#Directory from which to run commands
 WORKDIR /app
 
+#Install deps
 RUN npm install
 
-#Install deps
+#Make script executable
 RUN chmod 700 ./run.sh
