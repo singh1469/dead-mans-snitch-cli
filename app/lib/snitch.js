@@ -1,6 +1,6 @@
 'use strict'
 
-//Interface with dead-mans-snitch via this module
+//Interface with dead-mans-snitch API via this module
 
 var DeadMansSnitch = require('dead-mans-snitch');
 

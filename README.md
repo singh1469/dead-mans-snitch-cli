@@ -13,7 +13,7 @@ Purpose of this project was two fold;
 
 - Download project
 - Run `npm install`
-- Assign key to an environment variable called `DEAD_MANS_SNITCH_KEY`.
+- Assign key to an environment variable named `DEAD_MANS_SNITCH_KEY`.
 - In project directory run `node --harmony index.js --help`
 
 #####Only tested on OSX
@@ -32,6 +32,5 @@ docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  <DOCKER_IMAGE_ID> ./run.sh --list
 `node --harmony index.js --list`
 
 ##Todo
-#####comments
 #####output errors to var/log
 #####tests

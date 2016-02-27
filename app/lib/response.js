@@ -1,6 +1,9 @@
 'use strict'
+
+//Handle client response here
+
 var chalk = require('chalk');
-//Dealing with client response
+var constant = require('./constant.js');
 
 module.exports = {
 	/**
@@ -17,17 +20,18 @@ module.exports = {
 			throw "param must be of type string, error response2";
 		}
 
+		//filter out any entries in items that do not match statusType (if statusType is set)
 		var status, output, count;
 		output = [];
 		count = 0;
 		items.forEach(item=> {
 			if (statusType !== undefined) {
 				if (item.status !== statusType) {
-					return; //do not process this entry
+					return; //do not process this entry as status does not match
 				}
 			}
-			if (item.status === 'healthy') {
-				status = chalk.bold.green('healthy');
+			if (item.status === constant.healthy) {
+				status = chalk.bold.green(constant.healthy);
 			} else {
 				status = chalk.bold.red(item.status);
 			}
@@ -41,6 +45,7 @@ module.exports = {
 			return false;
 		}
 
+		//add generic message to the start of the array
 		output.unshift(`Found ${count} snitches..`);
 		return output;
 	},
@@ -61,6 +66,7 @@ module.exports = {
 		if (typeof items === 'string' && items.trim() === '') {
 			throw "param must not be an empty string, error response3";
 		}
+		//add new line breaks
 		var output = '';
 		if (Array.isArray(items)) {
 			//es8 closure syntax

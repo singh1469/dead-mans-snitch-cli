@@ -9,8 +9,8 @@ var constant = require('./lib/constant.js');
 var response = require('./lib/response.js');
 var chalk = require('chalk');
 
+//dead mans snitch api key
 var api_key = auth.getKey();
-
 
 program
   .version('1.0.0')
@@ -19,7 +19,7 @@ program
   .option('-u, --unhealthy', 'List unhealthy snitches')
   .parse(process.argv);
 
-if (api_key === '') {
+if (api_key === '') { //validate whether we have an api key before running any commands
   let message = chalk.red.bold('Sorry, no api key found. Try setting DEAD_MANS_SNITCH_KEY as an environment variable containing your api key');
   response.write(message);
   return;
