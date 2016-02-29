@@ -11,7 +11,7 @@ Purpose of this project was two fold;
 
 ##Usage
 
-- Download project
+- Download project (git clone)
 - Run `npm install`
 - Assign key to an environment variable named `DEAD_MANS_SNITCH_KEY`.
 - In project directory run `node --harmony index.js --help`
@@ -21,6 +21,7 @@ Purpose of this project was two fold;
 ##Docker support
 This utility can also run as a Docker container
 ```
+#Download project (git clone)
 cd /path/to/dead-mans-snitch-cli
 docker build .
 #grab the docker image id
