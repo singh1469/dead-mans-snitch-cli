@@ -28,6 +28,8 @@ docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  singh1469/dead-mans-snitch-cli ./r
 
 ##Example usage
 `node --harmony index.js --list`
+`node --harmony index.js --healthy`
+`node --harmony index.js --unhealthy`
 
 ##Todo
 #####output errors to var/log
