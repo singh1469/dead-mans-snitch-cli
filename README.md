@@ -16,7 +16,7 @@ Purpose of this project was two fold;
 - Assign key to an environment variable named `DEAD_MANS_SNITCH_KEY`.
 - In project directory run `node --harmony index.js --help`
 
-#####Only tested on OSX
+#####Only tested on OSX & Ubuntu 14:04
 
 ##Docker support
 This utility can also run as a Docker container.
