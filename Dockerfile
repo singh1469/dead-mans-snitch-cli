@@ -1,7 +1,9 @@
 FROM node:argon
 
 #Mount the application directory
-ADD ./app /app
+#ADD ./app /app
+#Clone repo to root directory
+RUN git@github.com:singh1469/dead-mans-snitch-cli.git /
 
 #Directory from which to run commands
 WORKDIR /app
