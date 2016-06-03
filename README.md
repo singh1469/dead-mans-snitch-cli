@@ -21,12 +21,8 @@ Purpose of this project was two fold;
 ##Docker support
 This utility can also run as a Docker container
 ```
-#Download project (git clone)
-cd /path/to/dead-mans-snitch-cli
-docker build .
-#grab the docker image id
 #grab your api key
-docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  <DOCKER_IMAGE_ID> ./run.sh --list
+docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  singh1469/dead-mans-snitch-cli ./run.sh --list
 ```
 
 ##Example usage
