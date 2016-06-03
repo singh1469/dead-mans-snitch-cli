@@ -6,7 +6,7 @@ FROM node:argon
 RUN cd / && git clone https://github.com/singh1469/dead-mans-snitch-cli.git
 
 #Directory from which to run commands
-WORKDIR /app
+WORKDIR /dead-mans-snitch-cli/app
 
 #Install deps
 RUN npm install
