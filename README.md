@@ -19,7 +19,8 @@ Purpose of this project was two fold;
 #####Only tested on OSX
 
 ##Docker support
-This utility can also run as a Docker container
+This utility can also run as a Docker container.
+https://hub.docker.com/r/singh1469/dead-mans-snitch-cli/
 ```
 #grab your api key
 docker run -e DEAD_MANS_SNITCH_KEY=<API_KEY>  singh1469/dead-mans-snitch-cli ./run.sh --list
